@@ -23,7 +23,7 @@ class FloodDataprocessor:
         self.train_times = pd.date_range(config['Dates']['StartTrain'], config['Dates']['EndTrain'], freq='7D')
         self.test_times = pd.date_range(config['Dates']['StartTest'], config['Dates']['EndTest'], freq='7D')
         if "TargetsFile" in config:
-            self.labels = xr.open_dataset(self.save_path+f"{config['TargetsFile']}", engine="scipy")
+            self.labels = xr.open_dataset(self.save_path+f"/{config['TargetsFile']}", engine="scipy")
         # Load raw input data
         self.mask = xr.open_dataset(self.save_path+"/relevent_data_tag_binary_mask.nc")    
         print(f'Data Flood with save = {save}')  

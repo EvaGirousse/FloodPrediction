@@ -3,6 +3,7 @@ from src.models import BabyCNN
 config = {
     "DataDir": "data",
     "PreprocessedDir": "data",
+    "TargetsFile": "final_label_Full_Rez.nc", 
     "Features": 16,
     "PastData": False,
     "BatchSize": 1024,
