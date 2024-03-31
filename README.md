@@ -28,3 +28,8 @@ The code is parametrized by the ```config``` dictionnary which  can be found in 
 ## Data Visualization ##
 
 We also provide a notebook [results_analysis.ipynb](results_analysis.ipynb). You can see how we generate predictions on a validation set and find the plots we used for the report.
+
+## Authors ##
+
+Julie Keisler
+Eva Girousse
